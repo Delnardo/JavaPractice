@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="EjercicioHerencia01">
+  <ClassDiagramComponents>
+    <Class name="EjercicioHerencia01" package="ejercicioherencia01" visibility="public" xPosition="104.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Animal" package="Entidades" visibility="public" xPosition="20.0" yPosition="147.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="alimento" type="String" visibility="private"/>
+        <Field name="edad" type="int" visibility="private"/>
+        <Field name="raza" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="alimento"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="String" name="raza"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="alimentarse" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Caballo" package="Entidades" visibility="public" xPosition="505.0" yPosition="45.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="String" name="raza"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Gato" package="Entidades" visibility="public" xPosition="561.0" yPosition="194.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="String" name="raza"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Perro" package="Entidades" visibility="public" xPosition="518.0" yPosition="334.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="String" name="raza"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Entidades.Gato" target="Entidades.Animal"/>
+    <IsRelation name="is" source="Entidades.Perro" target="Entidades.Animal"/>
+    <IsRelation name="is" source="Entidades.Caballo" target="Entidades.Animal"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
